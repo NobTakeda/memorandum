@@ -61,27 +61,27 @@ public class ImprovedGoalDistance{
             distanceList.add(distance);
         }   
 
-				int nearGoalPoint=0;
-				for(int i=0;i<goalPointNum;i++){
-						if(minDistance==distanceList.get(i)){
-								nearGoalPoint++;
-						}
+		int nearGoalPoint=0;
+			for(int i=0;i<goalPointNum;i++){
+				if(minDistance==distanceList.get(i)){
+					nearGoalPoint++;
 				}
-				System.out.println(nearGoalPoint);
+			}
+		System.out.println(nearGoalPoint);
 
-				for(int i=0;i<goalPointNum;i++){
-						if(minDistance==distanceList.get(i)){
-								System.out.println(i+1);
-						}
-				}
-				/*	
-				要素確認用
-				for(int i=0;i<distanceList.size();i++){
-						System.out.println("ゴール地点"+(i+1)+"からの距離は"+distanceList.get(i));
-				}
-				for(Integer key: goalPointMap.keySet()){
-						System.out.println(key+":"+goalPointMap.get(key));
-				}
-				*/
+		for(int i=0;i<goalPointNum;i++){	
+			if(minDistance==distanceList.get(i)){
+				System.out.println(i+1);
+			}
+		}
+		/*	
+		要素確認用
+		for(int i=0;i<distanceList.size();i++){
+			System.out.println("ゴール地点"+(i+1)+"からの距離は"+distanceList.get(i));
+		}
+		for(Integer key: goalPointMap.keySet()){
+			System.out.println(key+":"+goalPointMap.get(key));
+		}
+		*/
 		}
 }
